@@ -1,1 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+  background-color: #2a3439; /* Dark gunmetal color */
+  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                    radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: 0 0, 25px 25px;
+  padding: 20px;
+  color: #ffffff; /* White text for dark mode */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  padding: 20px;
+  flex: 1;
+}
+
+.recipe-header {
+  text-align: center;
+  padding: 20px;
+}
+
+.recipe-header h1 {
+  font-size: 3em;
+  font-weight: bold;
+  color: #ffffff; /* White text */
+}
+
+.subtitle {
+  color: #ffffff; /* White text */
+  font-size: 1em;
+  margin-top: 8px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner img {
+/* banner image height 16:9 aspect ratio */
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  margin-top: 20px;
+}
+
+.recipe-content {
+  display: flex;
+  padding: 20px;
+  gap: 20px; /* Space between cards */
+}
+
+.ingredients, .instructions {
+  width: 50%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.05); /* White with 5% opacity */
+  color: #ffffff; /* White text for readability on dark background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.carousel-item img {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the images horizontally */
+}
+
+
+
+
+.related-recipes {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.05); /* White with 5% opacity */
+  color: #ffffff; /* White text for readability on dark background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  margin-top: 20px;
+}
+
+.related-recipes table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.related-recipes th, .related-recipes td {
+  padding: 32px 20px; /* 32px top and bottom, 20px left and right */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Light border for separation */
+}
+
+.related-recipes th {
+  text-align: left;
+  font-weight: bold;
+  color: #ffffff; /* White text */
+}
+
+.related-recipes td {
+  color: #ffffff; /* White text */
+}
+
+/* Unordered list in related-recipes the same style as unordered list in Ingredients. Same font color and size */
+.related-recipes a {
+  color: #ffffff; /* White text */
+  font-size: 16px; /* Font size */
+  text-decoration: underline; /* Underline */
+}
+
+.related-recipes a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+.related-recipes ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #ffffff; /* White text */
+  font-size: 16px; /* Font size */
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+ul, ol {
+  list-style-position: inside;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+ul li, ol li, p {
+  font-size: 16px;
+  line-height: 1.5em;
+  margin-bottom: 5px;
+}
 
